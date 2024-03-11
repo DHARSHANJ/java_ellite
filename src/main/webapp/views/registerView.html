@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Page</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .signup-container {
+      max-width: 400px;
+      margin: 100px auto;
+    }
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .card-header {
+      background-color: #28a745;
+      color: white;
+      text-align: center;
+      border-radius: 10px 10px 0 0;
+    }
+    .btn-success {
+      background-color: #28a745;
+      border-color: #28a745;
+      width: 100%;
+    }
+    .btn-success:hover {
+      background-color: #218838;
+      border-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 signup-container">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="mb-0">Sign Up</h3>
+          </div>
+          <div class="card-body">
+            <form action="../RegisterServlet" method="post">
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
+              </div>
+              <button type="submit" class="btn btn-success">Sign Up</button>
+            </form>
+            <div class="text-center mt-3">
+              <p>Already have an account? <a href="loginView.html">Log in here</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
